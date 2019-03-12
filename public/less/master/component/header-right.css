@@ -1,0 +1,104 @@
+.header-right {
+  /*------margin, background and padding of .header------*/
+  /*------margin, background, color and padding of li menu------*/
+  /*------margin, background, color and padding of a(link) menu------*/
+  /*------margin, background and padding of ul dropdown menu------*/
+  /*------margin, background, color and padding of li dropdown------*/
+  /*------margin, background, color and padding of a(link) dropdown------*/
+  /*--------------------------------------------css-----------------------------------------*/
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background: #c0c0c0;
+  display: inline-block;
+  float: right;
+}
+.header-right ul {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+.header-right ul li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-right ul li a {
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-right ul li a:hover {
+  background: #aaaaaa;
+}
+.header-right ul li ul {
+  position: absolute;
+  z-index: 10;
+  background: #ccc;
+  display: none;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background: #cccccc;
+}
+.header-right ul li ul li {
+  display: block;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-right ul li ul li a {
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-right ul li ul li a:hover {
+  background: #aaaaaa;
+}
+.header-right ul li:hover ul {
+  display: block;
+}

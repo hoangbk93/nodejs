@@ -1,0 +1,288 @@
+#main {
+    &.main-pages {
+        .section-introduce {
+            position: relative;
+            padding-bottom: 50px;
+
+            &:after {
+                width: 100%;
+                content: "";
+                display: block;
+                height: 40px;
+                background-image: url(../images/introduce_after_bg.gif);
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-100%);
+                background-repeat: no-repeat;
+                background-position: top center;
+
+            }
+
+            .module-introduce {
+
+
+                .module-content {
+                    padding-top: 34px;
+
+                    .introduce-control {
+                        .control-list {
+                            border: 1px dashed #2fd573;
+                            display: table;
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-radius: 33px;
+
+                            .control-list__item {
+                                float: left;
+                                border-radius: 30px;
+                                padding: 14px 30px;
+                                font-size: 16px;
+                                font-weight: bold;
+                                padding-bottom: 12px;
+                                cursor: pointer;
+
+                                &.active {
+                                    background: #2fd573;
+                                    margin: -1px;
+                                    padding: 15px 31px;
+                                    padding-bottom: 13px;
+                                    color: #fff;
+
+                                    &:hover {
+                                        background: #2fd573;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: #67ed9e;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .introduce-tab {
+
+                        padding-top: 93px;
+                        max-width: 1027px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        .tab-item {
+                            position: relative;
+                            display: none;
+
+                            &.active {
+                                display: block;
+                            }
+
+                            .text {
+
+                                padding-top: 50px;
+
+                                .desc {
+
+                                    text-align: justify;
+                                    font-size: 16px;
+                                    line-height: 29px;
+                                    margin-bottom: 28px;
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .section-opinion {
+            background-image: url(../images/opinion_page_bg.gif);
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            margin-top: -86px;
+            padding-top: 46px;
+        }
+
+        .section-slogan {
+            background-image: url(../images/slogan_page_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding-top: 60px;
+            padding-bottom: 125px;
+
+            .desc {
+                font-size: 36px;
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #main {
+        &.main-pages {
+            .section-introduce {
+                .module-introduce {
+                    .module-content {
+                        .introduce-control {
+                            .control-list {
+                                .control-list__item {
+                                    padding: 13px 20px 12px;
+                                    font-size: 14px;
+
+                                    &.active,
+                                    &:hover {
+                                        padding: 14px 21px 13px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .introduce-tab {
+                            .tab-item {
+                                .img {
+                                    img {
+                                        max-width: 100%;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    #main {
+        &.main-pages {
+            .section-introduce {
+                .module-introduce {
+                    .module-content {
+                        .introduce-control {
+                            .control-list {
+                                max-width: 450px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                border-radius: 0;
+
+                                .control-list__item {
+                                    padding: 13px 20px 12px;
+                                    font-size: 14px;
+                                    width: 50%;
+                                    border-radius: 0;
+                                    text-align: center;
+
+                                    &.active,
+                                    &:hover {
+                                        padding: 13px 20px 12px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .introduce-tab {
+                            .tab-item {
+                                .img {
+                                    img {
+                                        max-width: 100%;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-slogan {
+                padding-bottom: 95px;
+
+                .desc {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #main {
+        &.main-pages {
+            .section-introduce {
+                .module-introduce {
+                    .module-content {
+                        .introduce-control {
+                            .control-list {
+                                max-width: 450px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                border-radius: 0;
+
+                                .control-list__item {
+                                    padding: 13px 20px 12px;
+                                    font-size: 14px;
+                                    width: 50%;
+                                    border-radius: 0;
+
+                                    &.active,
+                                    &:hover {
+                                        padding: 14px 21px 13px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .introduce-tab {
+                            padding-top: 40px;
+
+                            .tab-item {
+                                .img {
+                                    img {
+                                        max-width: 100%;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                }
+
+                                .text {
+                                    padding-top: 20px;
+
+                                    .desc {
+
+                                        font-size: 14px;
+                                        line-height: 29px;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-slogan {
+                padding-bottom: 80px;
+
+                .desc {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

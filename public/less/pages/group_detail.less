@@ -1,0 +1,159 @@
+#main {
+    &.main-pages {
+        position: relative;
+        .section-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            padding-top: 45px;
+            .title {
+                margin: 0;
+                font-size: 16px;
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+        .section-group {
+            background: #f6f4f4;
+            padding-top: 6px;
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 58px;
+                top: 0;
+                left: 0;
+                background-image: url(../images/group_after.gif);
+                background-position: top center;
+                background-repeat: no-repeat;
+                transform: translateY(-100%);
+                position: absolute;
+
+            }
+
+
+
+            .module-group {
+
+
+                .module-header {
+                    .title {
+                        color: #333;
+                        font-size: 25px;
+                    }
+
+                    .desc {
+                        color: #333;
+                    }
+                }
+                .module-content {
+                    padding-top: 13px;
+                    .img {
+                        .ImagesFrame:before {
+                            padding-bottom: 64.43%;
+                        }
+                    }
+                    .text {
+                        padding-left: 31px;
+                        padding-top: 5px;
+                        .desc {
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+
+        }
+        .section-aplication {
+            .module-aplication {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    #main {
+        &.main-pages {
+            .section-productProcedure {
+                .module-productProcedure {
+                    .module-content {
+                        .item {
+                            .title {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    #main {
+        &.main-pages {
+            .section-productProcedure {
+                padding-bottom: 20px;
+
+                &::after {
+                    height: 30px;
+                }
+
+                .module-productProcedure {
+                    .module-content {
+                        .item {
+                            .title {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .section-product {
+                .module-product {
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #main {
+        &.main-pages {
+            .section-productProcedure {
+                padding-bottom: 20px;
+
+                &::after {
+                    top: 29px;
+                    height: 44px;
+                }
+
+                .module-productProcedure {
+                    padding-bottom: 70px;
+
+                    .module-content {
+                        padding-top: 30px;
+
+                        .item {
+                            min-height: auto;
+                            padding-bottom: 50px;
+
+                            .title {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .section-product {
+                .module-product {
+                    padding-top: 70px;
+                }
+            }
+        }
+    }

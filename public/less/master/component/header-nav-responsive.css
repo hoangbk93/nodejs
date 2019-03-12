@@ -1,0 +1,276 @@
+@media only screen and (max-width: 767px) {
+  /*------------------------set padding, margin, background for .header-nav ----------------*/
+  /*----------------------set width for menu screen mobile-------------------*/
+  /*----------------------style for scroll menu--------------------------------*/
+  /*----------------------set position for bar icon menu-----------------------*/
+  /*----------------------set position for close icon menu-----------------------*/
+  /*---------------------set padding, margin for logo------------*/
+  /*------margin, background and padding of .nav-right------*/
+  /*------margin, background, color and padding of li menu------*/
+  /*------margin, background, color and padding of a(link) and logo menu show------*/
+  /*------margin, background and padding of ul dropdown menu------*/
+  /*------margin, background, color and padding of li dropdown------*/
+  /*------margin, background, color and padding of a(link) dropdown------*/
+  /*--------------------------------------------css-----------------------------------------*/
+  /*-----------------------style-mobile-down----------------------------------------*/
+  .header-nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: #bcbcbc;
+  }
+  .header-nav .show-mobile {
+    display: block;
+  }
+  .header-nav .show-mobile a {
+    display: inline-block;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: auto;
+  }
+  .header-nav nav {
+    z-index: 10000;
+  }
+  .header-nav nav.show-nav {
+    width: 250px;
+    opacity: 1;
+    display: block;
+  }
+  .header-nav nav .nav-right {
+    float: none;
+    display: block;
+  }
+  .header-nav nav .nav-left {
+    position: relative;
+    float: none;
+    display: block;
+  }
+  .header-nav nav .nav-left .logo {
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .header-nav nav .nav-left .close-menu {
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: 10px;
+    color: #000000;
+    font-size: 16px;
+    opacity: 0.7;
+    display: block;
+  }
+  .header-nav nav .nav-left .close-menu:hover {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .header-nav nav ul {
+    float: none;
+  }
+  .header-nav nav ul li {
+    float: none;
+    display: block;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+    background: #cccccc;
+  }
+  .header-nav nav ul li:hover ul {
+    display: block;
+  }
+  .header-nav nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+    background: #cccccc;
+    border-bottom: 2px solid #c0c0c0;
+  }
+  .header-nav nav ul li a:hover {
+    background: #aaaaaa;
+    border-bottom: 2px solid #000000;
+    color: #ffffff;
+  }
+  .header-nav nav ul li ul {
+    display: none;
+    position: relative;
+    z-index: 10;
+    background: #ccc;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background: #cccccc;
+  }
+  .header-nav nav ul li ul li {
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+    background: #cccccc;
+  }
+  .header-nav nav ul li ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+    background: #cccccc;
+    border-bottom: 2px;
+  }
+  .header-nav nav ul li ul li a:hover {
+    background: #aaaaaa;
+    border-bottom: 2px solid #000000;
+    color: #ffffff;
+  }
+  .header-nav nav::-webkit-scrollbar {
+    width: 10px;
+  }
+  .header-nav nav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .header-nav nav::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+  }
+  .mobile-right .show-mobile {
+    text-align: right;
+  }
+  .mobile-right nav {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: auto;
+  }
+  .mobile-right nav .nav-left .logo {
+    display: inline-block;
+    float: none;
+  }
+  .mobile-right .show-menu {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    color: #000000;
+    font-size: 27px;
+  }
+  .mobile-right .show-menu:hover {
+    color: #ffffff;
+    font-size: 27px;
+  }
+  .mobile-down .show-mobile {
+    text-align: left;
+  }
+  .mobile-down nav {
+    z-index: 10000;
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    display: none;
+  }
+  .mobile-down nav .nav-left {
+    padding-top: 50px;
+  }
+  .mobile-down nav .nav-left .logo {
+    display: none;
+    float: none;
+  }
+  .mobile-down .show-menu {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    color: #000000;
+    font-size: 27px;
+  }
+  .mobile-down .show-menu:hover {
+    color: #ffffff;
+    font-size: 27px;
+  }
+  .mobile-left nav {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: auto;
+  }
+  .mobile-left nav .nav-left .logo {
+    float: none;
+    display: inline-block;
+  }
+  .mobile-left .show-menu {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    color: #000000;
+    font-size: 27px;
+  }
+  .mobile-left .show-menu:hover {
+    color: #ffffff;
+    font-size: 27px;
+  }
+  .disable-window {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+  }
+  .block {
+    display: block !important;
+    z-index: 100;
+  }
+}

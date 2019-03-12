@@ -1,0 +1,509 @@
+#main {
+    &.main-pages {
+        .section-procedure {
+            background-image: url(../images/procedure_bg.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: 100%;
+            background-repeat: repeat-y;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 1px;
+                left: 0;
+                width: 100%;
+                height: 69px;
+                background-image: url(../images/procedure_after_bg.gif);
+                background-repeat: no-repeat;
+                background-position: bottom -1px center;
+                background-size: 100%;
+                transform: translateY(-100%);
+
+            }
+
+            .module-procedure {
+
+                &:after,
+                &:before {
+                    background-image: url(../images/title_style_white.gif);
+                }
+
+                .module-header {
+                    .title {
+                        color: #fff;
+
+                    }
+
+                    .desc {
+                        color: #fff;
+                    }
+                }
+
+                .module-content {
+                    width: 100%;
+                    overflow: hidden;
+                    padding-top: 54px;
+
+                    .procedure-item {
+                        text-align: center;
+                        position: relative;
+                        margin-bottom: 40px;
+
+                        &:nth-child(even) {
+                            transform: rotateY(180deg);
+
+                            .text {
+                                .head {
+                                    .title {
+                                        span {
+                                            transform: rotateY(-180deg);
+
+                                            &.number {
+                                                transform: translateY(-50%) rotateY(-180deg);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .content {
+                                    .desc {
+                                        transform: rotateY(-180deg);
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            .img {
+                                .procedure__arrow {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .img {
+                            margin: 0 auto;
+                            position: relative;
+                            max-width: 270px;
+                            display: block;
+                            z-index: 1;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .procedure__arrow {
+                                display: block;
+                                position: absolute;
+                                bottom: -68px;
+                                left: 50%;
+                                transform: translateX(129px);
+                                width: 34px;
+                                z-index: -1;
+                            }
+                        }
+
+                        .text {
+                            position: absolute;
+                            color: #fff;
+                            width: 100%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            max-width: 1085px;
+                            left: 50%;
+
+                            .bs-col {
+                                min-height: 1px;
+                            }
+
+                            .head {
+                                padding-right: 190px;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                text-align: right;
+                                width: 50%;
+
+                                .title {
+                                    margin: 0;
+                                    font-size: 40px;
+                                    font-weight: 700;
+                                    padding-top: 9px;
+                                    padding-left: 114px;
+                                    position: relative;
+                                    z-index: 1;
+                                    text-transform: capitalize;
+                                    display: table;
+                                    margin-left: auto;
+                                    white-space: nowrap;
+
+                                    span {
+                                        display: inline-block;
+
+                                        &.number {
+                                            font-size: 132px;
+                                            position: absolute;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            left: 0;
+                                            z-index: -1;
+                                            color: #ff487c;
+
+                                            &.green {
+                                                color: #a0ce4e
+                                            }
+
+                                            &.blue {
+                                                color: #00bea3
+                                            }
+
+                                            &.orange {
+                                                color: #f1894c
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .content {
+                                text-align: left;
+                                padding-left: 190px;
+
+                                .desc {
+                                    font-size: 17px;
+                                    max-width: 300px;
+                                    line-height: 25px;
+
+                                    span {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-service {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    #main {
+        &.main-pages {
+            .section-procedure {
+                .module-procedure {
+                    .module-content {
+                        .procedure-item {
+                            .text {
+                                .head {
+                                    .title {
+                                        padding-left: 35px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #main {
+        &.main-pages {
+            .section-procedure {
+                .module-procedure {
+                    .module-content {
+                        .procedure-item {
+                            .img {
+                                max-width: 170px;
+
+                                .procedure__arrow {
+                                    bottom: -73px;
+                                    transform: translateX(82px);
+                                    width: 27px;
+                                }
+                            }
+
+                            .text {
+                                .head {
+                                    padding-right: 110px;
+
+                                    .title {
+                                        padding-left: 40px;
+                                        font-size: 35px;
+
+                                        span {
+                                            &.number {
+                                                font-size: 80px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .content {
+                                    padding-left: 110px;
+
+                                    .desc {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    #main {
+        &.main-pages {
+            .section-procedure {
+                .module-procedure {
+                    .module-content {
+                        padding-bottom: 15px;
+
+                        .procedure-item {
+                            text-align: center;
+                            position: relative;
+                            margin-bottom: 50px;
+                            padding-left: 200px;
+                            display: table;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &:nth-child(even) {
+                                transform: rotateY(0deg);
+
+                                .text {
+                                    position: relative;
+                                    top: 0;
+                                    transform: unset;
+                                    left: 0;
+
+                                    .head {
+
+                                        .title {
+                                            span {
+                                                transform: rotateY(0deg);
+
+                                                &.number {
+                                                    transform: translateY(-50%) rotateY(0deg);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .content {
+                                        .desc {
+                                            transform: rotateY(0deg);
+                                            text-align: left;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .img {
+                                max-width: 170px;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+
+                                .procedure__arrow {
+                                    bottom: -56px;
+                                    transform: translateX(-82px) rotateY(180deg);
+                                    width: 23px;
+                                }
+                            }
+
+                            .text {
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                transform: unset;
+                                width: 300px;
+
+                                .head {
+                                    padding-right: 0;
+                                    position: relative;
+                                    width: 100%;
+                                    text-align: left;
+                                    transform: unset;
+                                    top: 0;
+                                    left: 0;
+
+                                    .title {
+                                        padding-left: 70px;
+                                        font-size: 30px;
+                                        display: block;
+                                        margin-bottom: 20px;
+
+                                        span {
+                                            &.number {
+                                                font-size: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .content {
+                                    padding-left: 0px;
+
+                                    .desc {
+                                        font-size: 14px;
+                                        min-height: 75px;
+                                        max-width: 247px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #main {
+        &.main-pages {
+            .section-procedure {
+                .module-procedure {
+                    .module-content {
+                        .procedure-item {
+                            text-align: center;
+                            position: relative;
+                            margin-bottom: 50px;
+                            padding-left: 0px;
+                            display: table;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            &:last-child {
+                                margin-bottom: 0;
+
+                                .img {
+                                    .procedure__arrow {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            &:first-child {
+                                .img {
+                                    .procedure__arrow {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(even) {
+                                transform: rotateY(0deg);
+
+                                .text {
+                                    position: relative;
+                                    top: 0;
+                                    transform: unset;
+                                    left: 0;
+
+                                    .head {
+
+                                        .title {
+                                            span {
+                                                transform: rotateY(0deg);
+
+                                                &.number {
+                                                    transform: translateY(-50%) rotateY(0deg);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .content {
+                                        .desc {
+                                            transform: rotateY(0deg);
+                                            text-align: center;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .img {
+                                max-width: 170px;
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                transform: unset;
+
+                                .procedure__arrow {
+                                    display: block;
+                                    bottom: unset;
+                                    transform: translateX(95px);
+                                    top: -49px;
+                                }
+                            }
+
+                            .text {
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                transform: unset;
+
+                                .head {
+                                    padding-right: 0;
+                                    position: relative;
+                                    width: 100%;
+                                    text-align: center;
+                                    transform: unset;
+                                    top: 0;
+                                    left: 0;
+
+                                    .title {
+                                        padding-left: 70px;
+                                        font-size: 35px;
+                                        display: block;
+                                        margin-bottom: 20px;
+
+                                        span {
+                                            &.number {
+                                                font-size: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .content {
+                                    padding-left: 0px;
+                                    text-align: center;
+
+                                    .desc {
+                                        font-size: 14px;
+                                        min-height: 75px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

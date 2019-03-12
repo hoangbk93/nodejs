@@ -1,0 +1,108 @@
+#blog-detail .title-detail h5 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#blog-detail .title-detail .date {
+  margin-top: 20px;
+}
+#blog-detail .title-detail .date i:nth-child(3) {
+  padding-left: 25px;
+}
+#blog-detail .content-text {
+  margin-top: 15px;
+}
+#blog-detail .content-text p {
+  line-height: 28px;
+  font-size: 14px;
+}
+#blog-detail .content-text .img-blog {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+#blog-detail .content-text .img-blog .ImagesFrame:before {
+  padding-bottom: 66.43%;
+}
+#blog-detail .content-text .img-blog .bold {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#blog-detail .content-text .img-blog .text-blog {
+  max-height: 200px;
+  overflow: hidden;
+}
+#blog-detail .share {
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  margin-top: -8px;
+  margin-bottom: 60px;
+}
+#blog-detail .share p {
+  display: inline-block;
+  position: relative;
+  top: -16px;
+  font-size: 15px;
+  margin-right: 12px;
+}
+#blog-detail .share .list-share {
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 1px;
+}
+#blog-detail .share .list-share ul li {
+  float: left;
+  padding-right: 15px;
+}
+#blog-detail .share .list-share ul li a {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #acacac;
+  display: inline-block;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 22px;
+  border-radius: 50%;
+  position: relative;
+}
+#blog-detail .share .list-share ul li a:hover {
+  background: linear-gradient(to top, #FEAB08 0%, #FFE307 100%);
+  background: -moz-linear-gradient(to top, #FEAB08 0%, #FFE307 100%);
+  background: -o-linear-gradient(to top, #FEAB08 0%, #FFE307 100%);
+  background: -ms-linear-gradient(to top, #FEAB08 0%, #FFE307 100%);
+  background: -webkit-linear-gradient(bottom, #FEAB08 0%, #FFE307 100%);
+  border-color: #FEAB08;
+}
+#blog-detail .share .list-share ul li a:hover i {
+  color: white;
+}
+#blog-detail .share .list-share ul li a i {
+  color: #acacac;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 479px) {
+  #blog-detail .content-text p {
+    text-align: justify;
+  }
+  #blog-detail .share p {
+    margin-right: -4px;
+  }
+  #blog-detail .share .list-share {
+    margin-left: 15px;
+  }
+  #blog-detail .share .list-share ul li {
+    padding-right: 5px;
+  }
+  #blog-detail .share .list-share ul li a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #acacac;
+    display: inline-block;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 16px;
+    border-radius: 50%;
+    position: relative;
+  }
+}

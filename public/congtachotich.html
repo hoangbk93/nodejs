@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Metronic | Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/tool.css">
+    <link rel="stylesheet" href="css/layout.min.css">
+    <link rel="stylesheet" href="css/components.min.css">
+    <link rel="stylesheet" href="css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!-- END HEAD -->
+
+  <body  class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+    <div class="page-wrapper" id="main-right">
+      <!-- BEGIN HEADER -->
+      <div class="page-header navbar">
+          <div class="logo-mobile">
+              <img src="images/logo-mobile.gif" alt="">
+          </div>
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+          <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+          <a
+            href="javascript:;"
+            class="menu-toggler responsive-toggler"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span><i class="fas fa-bars"></i></span>
+          </a>
+          <!-- END RESPONSIVE MENU TOGGLER -->
+          <!-- BEGIN TOP NAVIGATION MENU -->
+          <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+              <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle">
+                  <i class="fab fa-elementor"></i>Trang chủ
+                </a>
+              </li>
+              <!-- BEGIN NOTIFICATION DROPDOWN -->
+              <!--
+                DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+              -->
+              <li
+                class="dropdown dropdown-extended dropdown-notification"
+                id="header_notification_bar"
+              >
+                <a
+                  href="javascript:;"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                <i class="fas fa-bell"></i> Thông báo
+                  <span class="badge badge-default"> 7 </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="external">
+                    <h3><span class="bold">12 pending</span> notifications</h3>
+                    <a href="page_user_profile_1.html">view all</a>
+                  </li>
+                  <li>
+                    <ul
+                      class="dropdown-menu-list scroller"
+                      style="height: 250px;"
+                      data-handle-color="#637283"
+                    >
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">just now</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-success"
+                            >
+                            </span>
+                            New user registered.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">3 mins</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-danger"
+                            >
+                              <i class="fa fa-bolt"></i>
+                            </span>
+                            Server #12 overloaded.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">10 mins</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-warning"
+                            >
+                              <i class="fa fa-bell-o"></i>
+                            </span>
+                            Server #2 not responding.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">14 hrs</span>
+                          <span class="details">
+                            <span class="label label-sm label-icon label-info">
+                              <i class="fa fa-bullhorn"></i>
+                            </span>
+                            Application error.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">2 days</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-danger"
+                            >
+                              <i class="fa fa-bolt"></i>
+                            </span>
+                            Database overloaded 68%.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">3 days</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-danger"
+                            >
+                              <i class="fa fa-bolt"></i>
+                            </span>
+                            A user IP blocked.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">4 days</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-warning"
+                            >
+                              <i class="fa fa-bell-o"></i>
+                            </span>
+                            Storage Server #4 not responding dfdfdfd.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">5 days</span>
+                          <span class="details">
+                            <span class="label label-sm label-icon label-info">
+                              <i class="fa fa-bullhorn"></i>
+                            </span>
+                            System Error.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">9 days</span>
+                          <span class="details">
+                            <span
+                              class="label label-sm label-icon label-danger"
+                            >
+                              <i class="fa fa-bolt"></i>
+                            </span>
+                            Storage server failed.
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-user">
+                <a
+                  href="javascript:;"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <i class="fas fa-user"></i> Thông tin tài khoản
+                </a>
+              </li>
+              <!-- END USER LOGIN DROPDOWN -->
+              <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+              <!--
+                DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+              -->
+              <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle">
+                  <i class="fas fa-sign-out-alt"></i> Thoát
+                </a>
+              </li>
+              <!-- END QUICK SIDEBAR TOGGLER -->
+            </ul>
+          </div>
+          <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+      </div>
+      <!-- END HEADER -->
+      <!-- BEGIN HEADER & CONTENT DIVIDER -->
+      <div class="clearfix"></div>
+      <!-- END HEADER & CONTENT DIVIDER -->
+      <!-- BEGIN CONTAINER -->
+      <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+          <!-- BEGIN SIDEBAR -->
+          <!--
+            DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing
+          -->
+          <!--
+            DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed
+          -->
+          <div class="page-sidebar navbar-collapse collapse" id="main-left">
+            <!-- BEGIN SIDEBAR MENU -->
+            <!--
+              DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders)
+            -->
+            <!--
+              DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode
+            -->
+            <!--
+              DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode
+            -->
+            <!--
+              DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing
+            -->
+            <!--
+              DOC: Set data-keep-expand="true" to keep the submenues expanded
+            -->
+            <!--
+              DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed
+            -->
+            <div class="page-logo">
+              <a href="index.html">
+                <img src="images/logo.gif" alt="logo" class="logo-default" />
+              </a>
+            </div>
+            <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200" style="padding-top: 20px">
+            <!--
+                DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element
+              -->
+            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            <li class="sidebar-toggler-wrapper hide">
+              <div class="sidebar-toggler"><span></span></div>
+            </li>
+            <!-- END SIDEBAR TOGGLER BUTTON -->
+            <!--
+                DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element
+              -->
+
+            <li class="nav-item ">
+              <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-diamond"></i>
+                <span class="title">Quản lí user</span>
+                <span class="arrow"></span>
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item  ">
+                  <a href="user.html" class="nav-link ">
+                    <span class="title">Quản lí user</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item  ">
+              <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-puzzle"></i>
+                <span class="title">Quản lí ứng dụng</span>
+                <span class="arrow"></span>
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item  ">
+                  <a href="list-app.html" class="nav-link ">
+                    <span class="title">Danh sách ứng dụng</span>
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a href="giaodich.html" class="nav-link ">
+                    <span class="title">Giao dịch</span>
+                    <span class="badge badge-danger">2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item  ">
+              <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-puzzle1"></i>
+                <span class="title">Báo cáo</span> <span class="arrow"></span>
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item  ">
+                  <a href="baocao.html" class="nav-link ">
+                    <span class="title">Báo cáo</span>
+                    <span class="badge badge-danger">2</span>
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a href="congtachotich.html" class="nav-link ">
+                    <span class="title">Công tác hộ tịch</span>
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a href="chitiet-dientu.html" class="nav-link ">
+                    <span class="title">Chi tiết điện tử</span>
+                   
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+            <!-- END SIDEBAR MENU -->
+            <!-- END SIDEBAR MENU -->
+          </div>
+          <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="dashboard">
+
+                    <div class="portlet box green1 margin-page">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <img src="images/ic3.gif" alt=""> <span>BÁO CÁO CÔNG TÁC HỘ TỊCH</span> </div>
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+                                <a href="#portlet-config" data-toggle="modal" class="config" data-original-title=""
+                                    title=""> </a>
+                                <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+                                <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="detail-app">
+                                <h5 class="title">
+                                    ứng dụng ABS
+                                </h5>
+                                <p class="desc">
+                                    <span>mô tả ứng dụng:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perferendis cum dolor alias saepe, harum earum ex provident exercitationem ut minima vel fuga ratione reprehenderit odio iste velit officia obcaecati?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perferendis cum dolor alias saepe, harum earum ex provident exercitationem ut minima vel fuga ratione reprehenderit odio iste velit officia obcaecati?
+                                </p>
+                                <p class="desc">
+                                    Chi tiết:
+                                </p>
+                            </div>
+                            <div class="table-scrollable">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>ĐƠN VỊ</th>
+                                            <th>ĐĂNG KÍ KHAI SINH</th>
+                                            <th>THAY ĐỔI THÔNG TIN</th>
+                                            <th>ĐĂNG KÝ KẾT HÔN</th>
+                                            <th>THAY ĐỔI THÔNG TIN KẾT HÔN</th>
+                                            <th>TOAN TÍNH</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Huyện A</td>
+                                            <td class="number">10.000</td>
+                                            <td class="number">10.000</td>
+                                            <td class="number">5000/td>
+                                            <td></td>
+                                            <td></td>
+                                            
+
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td></td>
+                                            <td></td>
+                                            
+
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td></td>
+                                            <td></td>
+                                           
+
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td class="number"></td>
+                                            <td></td>
+                                            <td></td>
+                                           
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTENT -->
+        <!-- BEGIN QUICK SIDEBAR -->
+        <a href="javascript:;" class="page-quick-sidebar-toggler">
+          <i class="icon-login"></i>
+        </a>
+
+        <!-- END QUICK SIDEBAR -->
+      </div>
+      <!-- END CONTAINER -->
+      <!-- BEGIN FOOTER -->
+
+      <!-- END FOOTER -->
+    </div>
+    <!--[if lt IE 9]>
+      <script src="assets/global/plugins/respond.min.js"></script>
+      <script src="assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <!--js__bootstrap-->
+    <script src="js/bootstrap.js"></script>
+  
+
+    <script src="js/main.js"></script>
+    <script>
+    $(".page-sidebar-menu .nav-item").click(function(){
+        $(this).find(".sub-menu").slideDown();
+        $(this).siblings().find(".sub-menu").slideUp();
+    });
+    </script>
+
+  </body>
+</html>

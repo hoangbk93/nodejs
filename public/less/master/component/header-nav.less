@@ -1,0 +1,375 @@
+.header-nav {
+    position: relative;
+    @header-nav-pd-top: 0px;
+    @header-nav-pd-left: 0px;
+    @header-nav-pd-right: 0px;
+    @header-nav-pd-bottom: 0px;
+    @header-nav-mg-top: 0px;
+    @header-nav-mg-left: 0px;
+    @header-nav-mg-right: 0px;
+    @header-nav-mg-bottom: 0px;
+    @header-nav-mg-background: #bcbcbc;
+    nav:after,
+    nav:before {
+        content: "";
+        display: table;
+    }
+    nav:after {
+        clear: both;
+    }
+    padding-top: @header-nav-pd-top;
+    padding-bottom: @header-nav-pd-left;
+    margin-left: @header-nav-pd-right;
+    margin-right: @header-nav-pd-bottom;
+    margin-top: @header-nav-mg-top;
+    margin-bottom: @header-nav-mg-bottom;
+    margin-left: @header-nav-mg-left;
+    margin-right: @header-nav-mg-right;
+    background: @header-nav-mg-background;
+    .show-mobile{
+        display: none;
+    }
+    .show-menu{
+        position: absolute;
+        top: 0;
+        
+    }
+}
+nav{
+.nav-right {
+    /*------margin, background and padding of .header------*/
+    @nav-right-pd-top: 0px;
+    @nav-right-pd-right: 0px;
+    @nav-right-right-pd-left: 0px;
+    @nav-right-pd-bottom: 0px;
+    @nav-right-mg-top: 0px;
+    @nav-right-mg-left: 0px;
+    @nav-right-mg-right: 0px;
+    @nav-right-mg-bottom: 0px;
+    @nav-right-background: #c0c0c0;
+    /*------margin, background, color and padding of li menu------*/
+    @menu-pd-right: 0px;
+    @menu-pd-left: 0px;
+    @menu-pd-bottom: 0px;
+    @menu-mg-top: 0px;
+    @menu-mg-left: 0px;
+    @menu-mg-right: 0px;
+    @menu-mg-bottom: 0px;
+    @menu-color: #000;
+    @menu-background: #ccc;
+    /*------margin, background, color and padding of a(link) menu------*/
+    @menuLink-pd-right: 0px;
+    @menuLink-pd-left: 0px;
+    @menuLink-pd-bottom: 0px;
+    @menuLink-pd-top: 0px;
+    @menuLink-mg-top: 0px;
+    @menuLink-mg-left: 0px;
+    @menuLink-mg-right: 0px;
+    @menuLink-mg-bottom: 0px;
+    @menuLink-color: #000;
+    @menuLink-background: #ccc;
+    @menuLink-hover-background: #ccc;
+    @menuLink-hover-border: #ccc;
+    /*------margin, background and padding of ul dropdown menu------*/
+    @dropdown-pd-right: 0px;
+    @dropdown-pd-left: 0px;
+    @dropdown-pd-bottom: 0px;
+    @dropdown-pd-top: 0px;
+    @dropdown-mg-top: 0px;
+    @dropdown-mg-left: 0px;
+    @dropdown-mg-right: 0px;
+    @dropdown-mg-bottom: 0px;
+    @dropdown-background: #ccc;
+    /*------margin, background, color and padding of li dropdown------*/
+    @dropdown-menu-pd-right: 0px;
+    @dropdown-menu-pd-left: 0px;
+    @dropdown-menu-pd-bottom: 0px;
+    @dropdown-menu-pd-top: 0px;
+    @dropdown-menu-mg-top: 0px;
+    @dropdown-menu-mg-left: 0px;
+    @dropdown-menu-mg-right: 0px;
+    @dropdown-menu-mg-bottom: 0px;
+    @dropdown-menu-color: #000;
+    @dropdown-menu-background: #ccc;
+    /*------margin, background, color and padding of a(link) dropdown------*/
+    @dropdown-menuLink-pd-right: 0px;
+    @dropdown-menuLink-pd-left: 0px;
+    @dropdown-menuLink-pd-bottom: 0px;
+    @dropdown-menuLink-pd-top: 0px;
+    @dropdown-menuLink-mg-top: 0px;
+    @dropdown-menuLink-mg-left: 0px;
+    @dropdown-menuLink-mg-right: 0px;
+    @dropdown-menuLink-mg-bottom: 0px;
+    @dropdown-menuLink-color: #000;
+    @dropdown-menuLink-background: #ccc;
+    @dropdown-menuLink-hover-background: #aaa;
+    /*--------------------------------------------css-----------------------------------------*/
+    padding-top: @nav-right-pd-top;
+    padding-right: @nav-right-pd-right;
+    padding-left: @nav-right-right-pd-left;
+    padding-bottom: @nav-right-pd-bottom;
+    margin-top: @nav-right-mg-top;
+    margin-left: @nav-right-mg-left;
+    margin-right: @nav-right-mg-right;
+    margin-bottom: @nav-right-mg-bottom;
+    background: @nav-right-background;
+    display: inline-block;
+    float: right;
+    ul {
+        display: block;
+        float: left;
+        padding: 0;
+        margin: 0;
+       
+        li {
+            list-style-type: none;
+            float: left;
+            position: relative;
+            padding-right: @menu-pd-right;
+            padding-left: @menu-pd-left;
+            padding-bottom: @menu-pd-bottom;
+            padding-top: @menu-mg-top;
+            margin-left: @menu-mg-left;
+            margin-right: @menu-mg-right;
+            margin-bottom: @menu-mg-bottom;
+            color: @menu-color;
+            background: @menu-background;
+            
+            a {
+                padding-right: @menuLink-pd-right;
+                padding-left: @menuLink-pd-left;
+                padding-bottom: @menuLink-pd-bottom;
+                margin-top: @menuLink-mg-top;
+                margin-left: @menuLink-mg-left;
+                margin-right: @menuLink-mg-right;
+                margin-bottom: @menuLink-mg-bottom;
+                color: @menuLink-color;
+                background: @menuLink-background;
+                &:hover {
+                    background: @dropdown-menuLink-hover-background;
+                }
+            }
+            ul {
+               
+                position: absolute;
+                z-index: 10;
+                background: #ccc;
+                display: none;
+                padding-right: @dropdown-pd-right;
+                padding-left: @dropdown-pd-left;
+                padding-bottom: @dropdown-pd-bottom;
+                padding-top: @dropdown-pd-top;
+                margin-top: @dropdown-mg-top;
+                margin-left: @dropdown-mg-left;
+                margin-right: @dropdown-mg-right;
+                margin-bottom: @dropdown-mg-bottom;
+                background: @dropdown-background;
+                li {
+                    display: block;
+                    padding-right: @dropdown-menu-pd-right;
+                    padding-left: @dropdown-menu-pd-left;
+                    padding-bottom: @dropdown-menu-pd-bottom;
+                    padding-top: @dropdown-menu-pd-top;
+                    margin-top: @dropdown-menu-mg-top;
+                    margin-left: @dropdown-menu-mg-left;
+                    margin-right: @dropdown-menu-mg-right;
+                    margin-bottom: @dropdown-menu-mg-bottom;
+                    color: @dropdown-menu-color;
+                    background: @dropdown-menu-background;
+                    a {
+                        display: inline-block;
+                        padding-right: @dropdown-menuLink-pd-right;
+                        padding-left: @dropdown-menuLink-pd-left;
+                        padding-bottom: @dropdown-menuLink-pd-bottom;
+                        padding-top: @dropdown-menuLink-pd-top;
+                        margin-top: @dropdown-menuLink-mg-top;
+                        margin-left: @dropdown-menuLink-mg-left;
+                        margin-right: @dropdown-menuLink-mg-right;
+                        margin-bottom: @dropdown-menuLink-mg-bottom;
+                        color: @dropdown-menuLink-color;
+                        background: @dropdown-menuLink-background;
+                        &:hover {
+                            background: @dropdown-menuLink-hover-background;
+                        }
+                    }
+                }
+            }
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+}
+
+.nav-left {
+        /*------margin, background and padding of .header------*/
+    @nav-left-pd-top: 0px;
+    @nav-left-pd-right: 0px;
+    @nav-left-pd-left: 0px;
+    @nav-left-pd-bottom: 0px;
+    @nav-left-mg-top: 0px;
+    @nav-left-mg-left: 0px;
+    @nav-left-mg-right: 0px;
+    @nav-left-mg-bottom: 0px;
+    @nav-left-background: #c0c0c0;
+    /*------margin, background, color and padding of li menu------*/
+    @menu-pd-right: 0px;
+    @menu-pd-left: 0px;
+    @menu-pd-bottom: 0px;
+    @menu-mg-top: 0px;
+    @menu-mg-left: 0px;
+    @menu-mg-right: 0px;
+    @menu-mg-bottom: 0px;
+    @menu-color: #000;
+    @menu-background: #ccc;
+    /*------margin, background, color and padding of a(link) menu------*/
+    @menuLink-pd-right: 0px;
+    @menuLink-pd-left: 0px;
+    @menuLink-pd-bottom: 0px;
+    @menuLink-pd-top: 0px;
+    @menuLink-mg-top: 0px;
+    @menuLink-mg-left: 0px;
+    @menuLink-mg-right: 0px;
+    @menuLink-mg-bottom: 0px;
+    @menuLink-color: #000;
+    @menuLink-background: #ccc;
+    @menuLink-hover-background: #ccc;
+    @menuLink-hover-border: #ccc;
+    /*------margin, background and padding of ul dropdown menu------*/
+    @dropdown-pd-right: 0px;
+    @dropdown-pd-left: 0px;
+    @dropdown-pd-bottom: 0px;
+    @dropdown-pd-top: 0px;
+    @dropdown-mg-top: 0px;
+    @dropdown-mg-left: 0px;
+    @dropdown-mg-right: 0px;
+    @dropdown-mg-bottom: 0px;
+    @dropdown-background: #ccc;
+    /*------margin, background, color and padding of li dropdown------*/
+    @dropdown-menu-pd-right: 0px;
+    @dropdown-menu-pd-left: 0px;
+    @dropdown-menu-pd-bottom: 0px;
+    @dropdown-menu-pd-top: 0px;
+    @dropdown-menu-mg-top: 0px;
+    @dropdown-menu-mg-left: 0px;
+    @dropdown-menu-mg-right: 0px;
+    @dropdown-menu-mg-bottom: 0px;
+    @dropdown-menu-color: #000;
+    @dropdown-menu-background: #ccc;
+    /*------margin, background, color and padding of a(link) dropdown------*/
+    @dropdown-menuLink-pd-right: 0px;
+    @dropdown-menuLink-pd-left: 0px;
+    @dropdown-menuLink-pd-bottom: 0px;
+    @dropdown-menuLink-pd-top: 0px;
+    @dropdown-menuLink-mg-top: 0px;
+    @dropdown-menuLink-mg-left: 0px;
+    @dropdown-menuLink-mg-right: 0px;
+    @dropdown-menuLink-mg-bottom: 0px;
+    @dropdown-menuLink-color: #000;
+    @dropdown-menuLink-background: #ccc;
+    @dropdown-menuLink-hover-background: #aaa;
+    /*--------------------------------------------css-----------------------------------------*/
+    padding-top: @nav-left-pd-top;
+    padding-right: @nav-left-pd-right;
+    padding-left: @nav-left-pd-left;
+    padding-bottom: @nav-left-pd-bottom;
+    margin-top: @nav-left-mg-top;
+    margin-left: @nav-left-mg-left;
+    margin-right: @nav-left-mg-right;
+    margin-bottom: @nav-left-mg-bottom;
+    background: @nav-left-background;
+    display: block;
+    float: left;
+    .logo{
+        float: left;
+    }
+    .close-menu{
+        display: none;
+    }
+    ul {
+        display: block;
+        float: left;
+        padding: 0;
+        margin: 0;
+    
+        li {
+            list-style-type: none;
+            float: left;
+            position: relative;
+            padding-right: @menu-pd-right;
+            padding-left: @menu-pd-left;
+            padding-bottom: @menu-pd-bottom;
+            padding-top: @menu-mg-top;
+            margin-left: @menu-mg-left;
+            margin-right: @menu-mg-right;
+            margin-bottom: @menu-mg-bottom;
+            color: @menu-color;
+            background: @menu-background;
+           
+            a {
+                padding-right: @menuLink-pd-right;
+                padding-left: @menuLink-pd-left;
+                padding-bottom: @menuLink-pd-bottom;
+                margin-top: @menuLink-mg-top;
+                margin-left: @menuLink-mg-left;
+                margin-right: @menuLink-mg-right;
+                margin-bottom: @menuLink-mg-bottom;
+                color: @menuLink-color;
+                background: @menuLink-background;
+                &:hover {
+                    background: @dropdown-menuLink-hover-background;
+                }
+            }
+            ul {
+                position: absolute;
+                z-index: 10;
+                background: #ccc;
+                display: none;
+                padding-right: @dropdown-pd-right;
+                padding-left: @dropdown-pd-left;
+                padding-bottom: @dropdown-pd-bottom;
+                padding-top: @dropdown-pd-top;
+                margin-top: @dropdown-mg-top;
+                margin-left: @dropdown-mg-left;
+                margin-right: @dropdown-mg-right;
+                margin-bottom: @dropdown-mg-bottom;
+                background: @dropdown-background;
+                li {
+                    display: block;
+                    padding-right: @dropdown-menu-pd-right;
+                    padding-left: @dropdown-menu-pd-left;
+                    padding-bottom: @dropdown-menu-pd-bottom;
+                    padding-top: @dropdown-menu-pd-top;
+                    margin-top: @dropdown-menu-mg-top;
+                    margin-left: @dropdown-menu-mg-left;
+                    margin-right: @dropdown-menu-mg-right;
+                    margin-bottom: @dropdown-menu-mg-bottom;
+                    color: @dropdown-menu-color;
+                    background: @dropdown-menu-background;
+                    a {
+                        display: inline-block;
+                        padding-right: @dropdown-menuLink-pd-right;
+                        padding-left: @dropdown-menuLink-pd-left;
+                        padding-bottom: @dropdown-menuLink-pd-bottom;
+                        padding-top: @dropdown-menuLink-pd-top;
+                        margin-top: @dropdown-menuLink-mg-top;
+                        margin-left: @dropdown-menuLink-mg-left;
+                        margin-right: @dropdown-menuLink-mg-right;
+                        margin-bottom: @dropdown-menuLink-mg-bottom;
+                        color: @dropdown-menuLink-color;
+                        background: @dropdown-menuLink-background;
+                        &:hover {
+                            background: @dropdown-menuLink-hover-background;
+                        }
+                    }
+                }
+            }
+             &:hover ul {
+                display: block;
+            }
+        }
+    }
+}
+
+}
+

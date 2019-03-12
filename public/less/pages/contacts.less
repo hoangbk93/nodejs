@@ -1,0 +1,426 @@
+.section-contacts {
+    .module {
+
+        &::after,
+        &::before {
+            display: none !important;
+        }
+    }
+
+    .module-box {
+        padding-top: 62px !important;
+        padding-bottom: 0px !important;
+
+        .module-content {
+            padding: 0 100px;
+
+            .item {
+                border: 1px solid #c1c1c1;
+                height: 275px;
+                cursor: auto;
+
+                &:hover {
+                    border: 1px solid transparent;
+                    box-shadow: 0 0 13px 6px rgba(216, 216, 216, .47);
+                }
+
+                .icon {
+                    width: 85px;
+                    height: 85px;
+                    box-shadow: 0 0 5px 7px rgba(216, 216, 216, .47);
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    margin-top: 38px;
+                    margin-bottom: 27px;
+                    line-height: 85px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #11a44c;
+                }
+
+                .title {
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    h5 {
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                }
+
+                .desc {
+                    padding: 0 30px;
+                    text-align: center;
+                    line-height: 24px;
+
+                    p {
+                        margin: 0;
+                        font-size: 15px;
+                        color: #434343;
+                    }
+                }
+            }
+        }
+    }
+
+    .module-form {
+        padding-top: 59px !important;
+        padding-bottom: 0px !important;
+
+        .module-header {
+            .title {
+                h2 {
+                    color: #434343;
+                    font-weight: bold;
+                    font-size: 33.33px;
+                }
+            }
+        }
+
+        .module-content {
+            padding: 0 100px;
+
+            .form {
+                padding: 23px 0;
+
+                textarea,
+                input {
+                    background: #f6f7f8;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 10px;
+                    padding: 0 26px;
+
+                    &::placeholder {
+                        font-style: normal;
+                        font-size: 17px;
+                        color: #777777;
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 6px #11a44c;
+                    }
+                }
+
+                textarea {
+                    height: 188px;
+                    padding: 19px 26px;
+                }
+
+                input {
+                    height: 59px;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    position: relative;
+                    margin: 25px auto;
+                    font-size: 21px;
+                    text-transform: uppercase;
+                    padding: 15px 235px;
+                    background: linear-gradient(#0eb855, #076121);
+                    display: block;
+
+                    &:hover {
+                        background: linear-gradient(#076121, #0eb855);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-map {
+    .module {
+
+        &::after,
+        &::before {
+            display: none !important;
+        }
+    }
+
+    .module-map {
+        padding-top: 37px !important;
+        padding-bottom: 0px !important;
+
+        .module-content {}
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .section-contacts {
+        .module {
+            padding-top: 50px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .module-form,
+        .module-box {
+            .module-content {
+                padding: 0 40px;
+            }
+        }
+    }
+
+    .section-map {
+        .module {
+            padding-top: 0px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .section-contacts {
+        .module {
+            padding-top: 50px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .module-form,
+        .module-box {
+            .module-content {
+                padding: 0;
+
+                .item {
+                    .desc {
+                        padding: 0 15px;
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .module-form {
+            .module-header {
+                .title {
+                    h2 {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .module-content {
+                .form {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-map {
+        .module-map {
+            padding-top: 0px !important;
+            height: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .section-contacts {
+        .module {
+            padding-top: 30px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .module-form,
+        .module-box {
+            .module-content {
+                padding: 0;
+
+                .item {
+                    .desc {
+                        padding: 0 15px;
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .module-box {
+            .module-content {
+                .item {
+                    display: inline-block;
+                    height: 115px;
+                    width: 100%;
+
+                    .icon {
+                        float: left;
+                        margin: 20px;
+                        width: 70px;
+                        height: 70px;
+                        line-height: 70px;
+                    }
+
+                    .title {
+                        float: left;
+                        width: 75%;
+                    }
+
+                    .desc {
+                        float: left;
+                        width: 75%;
+                    }
+                }
+            }
+        }
+
+        .module-form {
+            .module-header {
+                .title {
+                    h2 {
+                        font-size: 28px;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .module-content {
+                .form {
+                    padding: 10px 0;
+
+                    input {
+                        height: 50px;
+                        margin-bottom: 10px;
+                    }
+
+                    button {
+                        width: 100%;
+                        position: unset;
+                        padding: 10px 0;
+                        transform: none;
+                    }
+
+                    textarea {
+                        height: 140px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-map {
+        .module-map {
+            padding-top: 0px !important;
+            height: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .section-contacts {
+        .module {
+            padding-top: 30px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .module-form,
+        .module-box {
+            .module-content {
+                padding: 0;
+
+                .item {
+                    .desc {
+                        padding: 0 15px;
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .module-box {
+            .module-content {
+                .item {
+                    display: inline-block;
+                    height: 115px;
+                    width: 100%;
+
+                    .icon {
+                        float: left;
+                        margin: 32px 20px;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+
+                    .title {
+                        float: left;
+                        width: 60%;
+
+                        h5 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .desc {
+                        float: left;
+                        width: 60%;
+                        padding: 0;
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .module-form {
+            .module-header {
+                .title {
+                    h2 {
+                        font-size: 19px;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .module-content {
+                .form {
+                    padding: 10px 0;
+
+                    input {
+                        height: 50px;
+                        margin-bottom: 10px;
+                    }
+
+                    input,
+                    textarea {
+                        &::placeholder {
+                            font-size: 13px;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        position: unset;
+                        padding: 10px 0;
+                        transform: none;
+                        font-size: 15px;
+                    }
+
+                    textarea {
+                        height: 140px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-map {
+        .module-map {
+            padding-top: 0px !important;
+            height: 250px;
+        }
+    }
+}

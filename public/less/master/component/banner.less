@@ -1,0 +1,78 @@
+.banner-slider {
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px;
+    }
+    .slick-next {
+        right: 45px;
+        opacity: 0.3;
+        width: 0;
+        height: 0;
+    }
+    .slick-prev {
+        left: 10px;
+        z-index: 1;
+        opacity: 0.3;
+        width: 0;
+        height: 0;
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+        opacity: 1;
+    }
+    .slick-dots li button {
+        opacity: 0.3;
+    }
+    .slick-dots li.slick-active button {
+        opacity: 1;
+    }
+    .slick-dots li button:before {
+        color: #fff;
+        opacity: 1;
+    }
+    .slick-dots li button:hover {
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #000;
+        opacity: 1;
+    }
+    &.slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .slick-dots {
+        bottom: 10px;
+    }
+    .slick-dots li button:before {
+        font-size: 10px;
+    }
+    div {
+        position: relative;
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 30px;
+        }
+        .slick-dots li {
+            margin: 0;
+        }
+    }
+    @media only screen and (max-width: 479px) {
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 30px;
+        }
+        .slick-dots li {
+            margin: 0;
+        }
+    }
+}

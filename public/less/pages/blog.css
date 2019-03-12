@@ -1,0 +1,118 @@
+#blog {
+  margin-top: 57px;
+}
+#blog .list-item .item-blog {
+  box-shadow: 1px 0px 19px -6px #888;
+  margin-bottom: 38px;
+}
+#blog .list-item .item-blog .left .ImagesFrame:before {
+  padding-bottom: 67.43%;
+}
+#blog .list-item .item-blog .right .box-content {
+  padding-top: 40px;
+  padding-right: 15px;
+}
+#blog .list-item .item-blog .right .box-content .link-blog {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #333;
+  max-height: 60px;
+  overflow: hidden;
+  display: block;
+}
+#blog .list-item .item-blog .right .box-content .link-blog:hover {
+  color: #ffba26;
+}
+#blog .list-item .item-blog .right .box-content .desc {
+  padding-top: 15px;
+  line-height: 27px;
+  max-height: 96px;
+  overflow: hidden;
+}
+#blog .pag .pagination {
+  margin: 0 auto;
+  display: table;
+  margin-top: 58px;
+  margin-bottom: 54px;
+}
+#blog .pag .pagination li a {
+  border: none;
+  color: #333;
+}
+#blog .pag .pagination li a:hover {
+  background-color: transparent;
+  color: #ffa400;
+}
+#blog .pag .pagination li.number a:hover {
+  background-color: #ffa400;
+  color: #fff;
+  border-radius: 50%;
+}
+.right-bar {
+  border: solid 2px #d4d4d4;
+  border-top: solid 3px #ffca0a;
+  padding: 0 20px;
+}
+.right-bar .title h5 {
+  color: #444444;
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  border-bottom: solid 1px #888;
+  padding-bottom: 14px;
+}
+.right-bar .list-bar .item {
+  margin-top: 18px;
+  border-bottom: solid 1px #999;
+  padding-bottom: 15px;
+}
+.right-bar .list-bar .item:nth-last-child(1) {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+.right-bar .list-bar .item .ImagesFrame:before {
+  padding-bottom: 80.43%;
+}
+.right-bar .list-bar .item .text {
+  padding-left: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+  line-height: 25px;
+}
+.right-bar .list-bar .item .text .link {
+  color: #333;
+}
+.right-bar .list-bar .item .text .link:hover {
+  color: #ffb400;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #blog .list-item .item-blog .left .ImagesFrame:before {
+    padding-bottom: 79.43%;
+  }
+}
+@media (max-width: 767px) {
+  #blog .list-item .item-blog .right .box-content {
+    padding: 30px;
+  }
+}
+@media (max-width: 479px) {
+  #blog .list-item .item-blog .right .box-content {
+    padding: 10px;
+  }
+  #blog .pag .pagination {
+    margin: 20px 0;
+  }
+  #blog .pag .pagination li a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+  .right-bar {
+    padding: 0 10px;
+  }
+  .right-bar .list-bar .item .text {
+    padding-left: 0;
+  }
+}

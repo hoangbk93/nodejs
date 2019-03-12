@@ -1,0 +1,16 @@
+hướng dẫn cài ứng dụng:
+cài môi trường: 
+- trên windown - download nodejs cài đặt trên máy tình với link:https://nodejs.org/en/download/
+- trên ubuntu - chạy lệnh trên cmd: sudo apt install nodejs npm
+
+Cài app: chạy lệnh dưới
+// tạo 1 app mới
+npx create-react-app <my-app>
+cd <my-app>
+npm install --save react-router-dom
+
+
+// copy toàn bộ tư mục trong file nén zip sau đó replace các file trong thư mục <my-app>
+npm start
+
+

@@ -1,0 +1,247 @@
+#main {
+    .result_vote {
+        margin: 0 auto;
+        padding-top: 11px;
+        padding-bottom: 100px;
+        .module-resultVote {
+            .module-content {
+                max-width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .img {
+            border: 8px solid #ebebe9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+            max-width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+            .ImagesFrame {
+                border: 2px solid #d5d5d5;
+                &:before {
+                    padding-bottom: 86.43%;
+                }
+            }
+        }
+
+        .content_info {
+            padding: 0 0 0 0;
+
+            .title {
+
+                .name,
+                .school {
+                    display: inline-block;
+                    padding-right: 28px;
+                    padding-left: 9px;
+                    font-weight: 700;
+                    font-family: 'Open Sans', sans-serif;
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    .fas {
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            .info {
+                table {
+                    width: 100%;
+                    tr {
+
+                        th,
+                        td {
+                            border-left: 1px dotted #333;
+                            padding: 11px 10px;
+                            font-family: 'Open Sans', sans-serif;
+
+                            &:first-child {
+                                border-left: none;
+                            }
+
+                            &.result {
+                                font-weight: bold;
+                            }
+                        }
+
+
+                        th {
+                            border-bottom: 1px dotted #333;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .detail_Votepeople {
+        .info {
+            padding-top: 66px;
+            padding-bottom: 44px;
+            border-bottom: 1px solid #c1c1c1;
+
+            p {
+                margin: 0 0 16px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+            }
+
+            .name {
+
+                padding-bottom: 15px;
+                display: inline-block;
+            }
+
+            .school {
+                padding-left: 20px;
+                display: inline-block;
+            }
+
+            .file {
+                border-top: 1px dotted #333;
+                max-width: 611px;
+                padding-top: 16px;
+                margin-top: -17px;
+            }
+        }
+    }
+
+    .vote_Choose {
+        max-width: 674px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        .item {
+            text-align: center;
+            cursor: pointer;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            .link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+            &:hover {
+                .img {
+                    .hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .img {
+                position: relative;
+
+                img {
+                    &.hover {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        opacity: 0;
+                        transition: .5s;
+                        top: 0;
+                    }
+                }
+
+                .text {
+                    position: absolute;
+                    bottom: 45px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    white-space: nowrap;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #main {
+        .result_vote {
+            max-width: 960px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            .img{
+                margin-bottom: 30px;
+            }
+            .content_info {
+                .title {
+                    .name,
+                    .school {
+                        padding-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #main {
+        .result_vote {
+            padding-top: 20px;
+
+
+
+            .content_info {
+                .title {
+                    text-align: center;
+                }
+            }
+        }
+
+        .detail_Votepeople {
+            .info {
+                padding-top: 35px;
+                padding-bottom: 10px;
+
+                .school {
+                    padding-left: 3px;
+                    padding-bottom: 11px;
+                }
+
+                .name {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .vote_Choose {
+            padding-top: 20px;
+            .item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:479px) {
+    #main {
+        .result_vote {
+            .img {
+                .ImagesFrame {
+                    &:before {
+                        padding-bottom: 96.43%;
+                    }
+                }
+            }
+        }
+
+        .vote_Choose {
+            padding-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+#main {
+    .section-result {
+        margin-top: 51px;
+        .module-result {
+            padding-bottom: 51px;
+            border-bottom: 1px dashed #444;
+
+
+            .module-content {
+                max-width: 940px;
+                margin-left: auto;
+                margin-right: auto;
+                .img {
+                    border: 8px solid #ebebe9;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-left: 20px;
+                    max-width: 330px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .ImagesFrame {
+                        border: 2px solid #d5d5d5;
+                        &:before {
+                            padding-bottom: 86.43%;
+                        }
+                    }
+                }
+                .text {
+                    padding-top: 12px;
+                    .school__value,
+                    .name__value {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #444444;
+                        margin-bottom: 15px;
+                        i {
+                            padding-right: 10px;
+                        }
+                    }
+                    .vote-result {
+                        border-top: 1px dashed;
+                        padding-top: 13px;
+
+                        .desc {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #444;
+                            margin-bottom: 15px;
+                            white-space: nowrap;
+                            word-spacing: -0.5px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .page-activity {
+        background: #fff;
+        .sectionBodyTitle {
+            margin-left: 0px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #main {
+        .section-result {
+            .module-result {
+                padding-bottom: 30px;
+                .module-content {
+                    padding-top: 0;
+                    .img {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.header-left {
+  /*------margin, background and padding of .header------*/
+  /*------margin, background, color and padding of li menu------*/
+  /*------margin, background, color and padding of a(link) menu------*/
+  /*------margin, background and padding of ul dropdown menu------*/
+  /*------margin, background, color and padding of li dropdown------*/
+  /*------margin, background, color and padding of a(link) dropdown------*/
+  /*--------------------------------------------css-----------------------------------------*/
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+  float: left;
+}
+.header-left ul {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+.header-left ul li {
+  display: inline-block;
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-left ul li a {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-left ul li a:hover {
+  background: #aaaaaa;
+}
+.header-left ul li ul {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background: #ccc;
+  display: none;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background: #cccccc;
+}
+.header-left ul li ul li {
+  display: block;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-left ul li ul li a {
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+  background: #cccccc;
+}
+.header-left ul li ul li a:hover {
+  background: #aaaaaa;
+}
+.header-left ul li:hover ul {
+  display: block;
+}
